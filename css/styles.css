@@ -144,6 +144,23 @@ address {
   color: var(--text-grey);
 }
 
+.contact-link-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: var(--text-grey);
+}
+
+.contact-link-icon.smartfone {
+  width: 10px;
+  height: 16px;
+}
+
+.contact-link:hover .contact-link-icon,
+.contact-link:active .contact-link-icon {
+  fill: var(--axcent);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -182,11 +199,30 @@ address {
 }
 
 /* advantages */
+
+.advantages-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages-icon-container {
+  padding: 25px 100px;
+  background-color: #f5f4fa;
+}
+
+.advantages-item-icon {
+  width: 70px;
+  height: 70px;
+  fill: #212121;
+}
+
 .advantages-item-title {
   font-size: 14px;
   font-weight: 700;
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -262,8 +298,54 @@ address {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--text-grey);
+  margin-bottom: 16px;
+}
+
+.social-list-container {
   padding-bottom: 30px;
-  margin-bottom: 0;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+}
+
+.social-icon:hover,
+.social-icon:active {
+  fill: var(--main-background-color);
+  border-radius: 50%;
+  background-color: var(--axcent);
+}
+
+/* clients */
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-icon {
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.client-icon:hover,
+.client-icon:active {
+  fill: var(--axcent);
+
+  .client-item {
+  }
 }
 
 /* footer */
@@ -299,10 +381,6 @@ address {
   margin-top: 9px;
 }
 
-.address {
-  margin-top: 20px;
-}
-
 .footer-contact-link {
   color: rgb(255, 255, 255, 0.6);
 }
@@ -310,6 +388,20 @@ address {
 .footer-contact-link:hover,
 .footer-contact-link:active {
   color: var(--axcent);
+}
+
+.address {
+  margin-top: 20px;
+  /* display: inline; */
+}
+
+.address-socials {
+  /* display: inline; */
+}
+
+.address-socials-text {
+  text-transform: capitalize;
+  color: var(--text-white);
 }
 
 /* portfolio */
