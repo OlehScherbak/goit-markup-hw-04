@@ -213,8 +213,11 @@ address {
 }
 
 .advantages-icon-container {
-  padding: 25px 100px;
+  height: 120px;
   background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-item-icon {
@@ -319,7 +322,29 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link-item {
+  width: 44px;
+  height: 44px;
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover,
+.social-link:active {
+  border-radius: 50%;
+  background-color: var(--axcent);
 }
 
 .social-icon {
@@ -328,11 +353,9 @@ address {
   fill: #afb1b8;
 }
 
-.social-icon:hover,
-.social-icon:active {
+.social-link:hover .social-icon,
+.social-link:active .social-icon {
   fill: var(--main-background-color);
-  border-radius: 50%;
-  background-color: var(--axcent);
 }
 
 /* clients */
@@ -342,12 +365,25 @@ address {
   justify-content: space-between;
 }
 
-.client-icon {
+.client-item {
   width: 170px;
   height: 92px;
-  fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.client-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .client-icon:hover,
@@ -366,7 +402,11 @@ address {
 
 .footer-flex {
   display: flex;
-  gap: 70px;
+  align-items: baseline;
+}
+
+.address-container {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -409,13 +449,22 @@ address {
   margin-top: 20px;
 }
 
-.address-socials-text {
+.social-link.footer-socials {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link.footer-socials:hover,
+.social-link.footer-socials:active {
+  background-color: var(--axcent);
+}
+
+.socials-text {
   text-transform: uppercase;
   color: var(--text-white);
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
-  margin-top: 14px;
   margin-bottom: 20px;
 }
 
@@ -469,13 +518,18 @@ address {
 .case-item:active {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
 }
+
+/* .case-link:hover .case-item,
+.case-link:active .case-item {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
 
 .case-title {
   font-size: 18px;
   font-weight: 700;
-  line-height: 0.5;
+  line-height: 2;
   letter-spacing: 0.06em;
   padding-top: 20px;
   padding-bottom: 4px;
