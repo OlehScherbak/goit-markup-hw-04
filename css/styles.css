@@ -167,12 +167,16 @@ address {
 
 /* hero */
 .hero {
-  background-color: var(--secondary-background-color);
+  background-color: #c4c4c4;
   text-align: center;
   padding: 200px 0;
-  background-image: url(../images/hero-bgimg.jpg);
+  background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bgimg.jpg);
   max-width: 1600px;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
