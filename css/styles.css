@@ -170,6 +170,9 @@ address {
   background-color: var(--secondary-background-color);
   text-align: center;
   padding: 200px 0;
+  background-image: url(../images/hero-bgimg.jpg);
+  max-width: 1600px;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -279,6 +282,9 @@ address {
 
 .team-item {
   background-color: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item:not(:last-child) {
@@ -354,6 +360,11 @@ address {
   padding: 60px 0;
 }
 
+.footer-flex {
+  display: flex;
+  gap: 70px;
+}
+
 .footer-logo {
   font-family: Raleway;
   font-weight: 700;
@@ -392,16 +403,16 @@ address {
 
 .address {
   margin-top: 20px;
-  /* display: inline; */
-}
-
-.address-socials {
-  /* display: inline; */
 }
 
 .address-socials-text {
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: var(--text-white);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-top: 14px;
+  margin-bottom: 20px;
 }
 
 /* portfolio */
@@ -429,6 +440,8 @@ address {
 .button:focus {
   color: var(--text-white);
   background-color: var(--axcent);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
@@ -446,6 +459,13 @@ address {
 .case-item {
   border: 1px solid #eeeeee;
   border-radius: 0px;
+}
+
+.case-item:hover,
+.case-item:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .case-title {
