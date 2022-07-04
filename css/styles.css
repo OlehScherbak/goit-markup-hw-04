@@ -389,9 +389,6 @@ address {
 .client-icon:hover,
 .client-icon:active {
   fill: var(--axcent);
-
-  .client-item {
-  }
 }
 
 /* footer */
